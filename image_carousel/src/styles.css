@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.image-carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+    background-color:azure;
+    border: 2px solid black;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db;
+    color:#fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #267ab5;
+    color:black
+}
+img{
+    width: 500px;
+    height:500px;
+    margin:0 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
+body{
+    text-align: center;
+    background-color: rgb(234, 239, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+    .image-carousel { 
+    flex-direction: column; 
+    padding: 10px; 
+    }
+
+    img {
+    width: 100%;
+     height: auto; 
+     margin: 10px 0; 
+    } 
+}
